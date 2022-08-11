@@ -1,323 +1,133 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<html><head><title>HTML5 Snow effect</title>
 
-	<title>GIVENMAKEWEBPAGE</title>
 </head>
-<style type="text/css">
-html, body {
-    height: 100%;
+<style>
+body { background:#000; color:#FFF; }
+a {
+color: white;
 }
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.main{
+		width: 100%;
+		background-image: url("authentic filipino dishes.png");
+		background-position: center;
+		background-size: cover;
+		height: 109vh;
+	}
+	.navbar{
+		width: 1200px;
+		height: 75px;
+		margin:  auto;
+	}
+	.icon{
+		width: auto;
+		float: left;
+		height: auto;
+	}
+	.logo{
+		color: white;
+		font-size: 35px;
+		font-family: Arial;
+		padding-left: auto;
+		float: left;
+		padding-top: auto;
+	}
+	.menu{
+		width: 400px;
+		float: left;
+		height: 70px;
 
-html {
-    display: table;
-    margin: auto;
-}
+	}	
+	ul{
+		float: left;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	ul li{
+		list-style: none;
+		margin-left: 52px;
+		margin-top: 27px;
+		font-size: 20px;
+  color: White;
+    background: #3a3b3c;
 
-body {
-    display: table-cell;
-    vertical-align: middle;
-    background-color:  #2b2525 ;
-}
-.container
-{
-    width:300%;
-  height: 300px;
-  background: #b0b3b8;
-}
-.header{
-  width:100%;
-  height: 100px;
-  background: #006491;
- font-family:  'Josefin Sans', sans-serif;
-color: #fff;
-     font-size: .875rem;
-    letter-spacing: .05rem;
-    line-height: 1rem;
-    min-width: 12.375rem;
-    padding: .1875rem .5rem .1875rem 4rem;
+	}
+
+	ul li a{
+		text-decoration: none;
+		color: #fff;
+		font-family: Arial;
+
+
+
+	}
+	table {
+    display: inline-block;
+    padding: 15px 30px;
+    color: black;
     text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-        text-align: center;
-
- 
-}
-.navigation{
-    position: fixed;
-    width: 7px;
-    height: 100px;
-    background: #bcbcbc;
-    transition: 0.5s;
-    overflow: hidden;
-
-}
-.navigation:hover{
-    width: 612px;
-    height: 180px;
-}
-.navigation ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: #ea1d63;
-}
-.navigation ul li{
-    position: relative;
-    width: 100%;
-    list-style: none;
-}
-.navigation ul li:hover{
-    background: #ea1d63;
-     color: white;
-
-}
-.navigation ul li a{
-    position: relative;
-    
-    width: 100%;
+    font-family: Arial;
+    border: 1px solid White;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     text-decoration: none;
-    color: #2b2525;
-
-}
-.navigation ul li a.icon{
-    position: relative;
-
-    min-width: 60px;
-    text-align: center;
-}
-.navigation ul li a.icon .fa{
-    font-size: 24px;
-    padding: 0 20px;
-}
-
-.navigation ul li a .title{
-    position: relative;
-
-    padding: 0 10px;
-    height: 60px;
-    text-align: start;
-    white-space: nowrap;
-
-}
-
-.navigation2{
-    position: bottom;
-    width: 20px;
-    height: 100px;
-    background: #f6efef;
-    transition: 0.5s;
+    font-size: 15px;
     overflow: hidden;
-
-}
-.navigation2:hover{
-    width: 700px;
-    height: 159px;
-}
-.navigation2 ul{
-    position: bottom;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color:  #2b2525;
-}
-.navigation2 ul li{
-    position: bottom;
-    width: 100%;
-    list-style: none;
-}
-.navigation2 ul li:hover{
-    background: #ffe599;
-}
-.navigation2 ul li a{
-    position: bottom;
-    width: 100%;
-    text-decoration: none;
-    color:  #2b2525;
-}
-.navigation2 ul li a.icon{
-    position: bottom;
-    min-width: 60px;
-    text-align: center;
-}
-.navigation2 ul li a.icon .fa{
-    font-size: 24px;
-    padding: 0 20px;
-}
-
-.navigation2 ul li a .title{
-    position: bottom;
-    padding: 0 10px;
-    height: 60px;
-    text-align: start;
-    white-space: nowrap;
-
-}
-.intro{
-    background: #000000;
-    transition: 0.5s;
-    overflow: hidden;
-    color: #00FF00;
-     font-family: 'Silkscreen', cursive;
- width: 800px;
-    height: 380px;
-    overflow: hidden;
-    position: center;
- 
-}
-.status{
-    font-family: One Dot Condensed Bold,Arial Narrow,Arial,Helvetica,sans-serif;
-    color: white;
-}
-.marquee {
- width: 1700px;
-    height: 380px;
-    overflow: hidden;
-    position: relative;
-    background-color: white;
-    
-}
-.marquee:before, .marquee:after{
-    position: relative;
-    top:  0;
-    width: 10rem;
-    height: 100%;
-    content: "";
-    z-index: 1;
-}
-.marquee:before{
-    left: 0;
-    background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-:root{
-    --marquee-width: 80vw;
-    --marquee-width: 30vh;
-/*  --marquee-elements: 7; */
-    --marquee-width-displayed: 4;
-    --marquee-element-width: calc(var(--marquee-width)/var(--marquee-width-displayed));
-    --marquee-animation-duration: cal(var(--marquee-element)*4s);
-
-}
-.marquee-content li img{
-    width: 100%;
-    border: 2px solid #eee;
-}
-@media(max-width: 600px){
-    html{ font-size: 12px; }
-    :root{
-        --marquee-width: 100vw;
-        --marquee-heidth: 16vh;
-        --marquee-elements-displayed: 3;
-    }
-}
-.marquee:after{
-    right: 0;
-    background: linear-gradient(to left, #111 0%, transparent 100%);
-}
-.marquee-content:hover{
-    animation-play-state: paused;
-}
-@keyframes scrolling{
-    0% {transform: translateX(80vw);}
-    100% {transform: translateX(calc(-1*20vw*9));}
-}
-.marquee-content{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    animation: scrolling 10s linear infinite;
-}
-.marquee-content li{
-    border: 30x solid teal;
-    width: 20vw;
-    flex-shrink: 0;
+    transition: 0.2s;
+    color: White;
+    background: #3a3b3c;
+    font-family: Segoe UI;
+    border-collapse: collapse;
     align-items: center;
-    justify-content: center;
-    font-size: 5rem;
-    white-space: nowrap;
-
+    font-weight: bold;
 }
-.avatar{
-    position: fixed;
+
+ul li a:hover{
+	color: #ff7200;
+		 border: 1px solid White;
 }
 </style>
-<body>
-    <div class="avatar">
-        <img src="logo.gif">
-    </div>
-    <div class="navigation">
-    <ul>
-        <h1>MENU</h1>
-        <li>
-         <a href="index.html">
-            <span class="icon"><i class="fa-solid fa-house"></i></span>
-            <span class="title">HOME</span>
-        </a>
-    </li>
-       <li>
-        <a href="https://www.facebook.com/Givenmakewebpage/">
-            <span class="icon"><i class="fa-solid fa-comment"></i></span>
-            <span class="title">FACEBOOK PAGE</span>
-        </a>
-    </li>  
-        <li>
-        <a href="index2.html">
-            <span class="icon"><i class="fas fa-file"></i></span>
-            <span class="title">REQUEST A WEBPAGE</span>
-        </a>
-    </li>
-        <li>
-        <a href="#">
-            <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
-            <span class="title">ARCHIVE WEBPAGE MADE BY GIVENMAKEWEBPAGE</span>
-        </a>
-    </li>
-        
-    </ul>
+<body onload="setup(); setInterval('draw();',30);">
 
-</div>
- <div class="header">
-    <span>←nav menu</span>
-    <img src="image.png" height="100" width="100" position="margin-right" alt="GIVEN-KUN">
-   <center> <span>HELLO AND WELCOME TO</span><H1>GIVENMAKEWEBPAGE</H1>
-    </center>
- </div> 
- 
-<center><div class="intro">
-    <span><h1>ABOUT GIVENMAKEWEBPAGE</h1></span>
-<center><span><# Hey! I would want to make our service available to anybody who liked and followed our page.<br> For a one-time fee of just 10.00 USD/562.90 PHP per webpage, we create websites. <br>We create websites for a variety of purposes, including commercials, assignments,<br> and school projects. Message me if you want to place an order. <br>Additionally, I want to inform you that HTML, CSS, PHP, Bootstrap, and JavaScript are <br>all used in the creation of this website. I also create webpages using Canva,<br> WordPress, and Wix. They are a component of our service as well. <br>Making Visual Basic Studio App Forms is another of our offerings. ></span></center>
 
-</div></center>
-<div class="status">
-<span><br></span>
-<center><span>//GivenMakeWebPage is Online//</span></center>
-    <center><span>🟢</span></center>
+
+<div class= "main">
+	<div class="navbar">
+		<table>
+		<div class="icon">
+			<tr>
+			<td><h1 class="logo">Given-kun's:
+		<b>"Authentic Filipino or Dishes"</b></h1></td></tr>
+		</div>
+		<tr>
+		<td>
+		<div class="menu">
+		
+			<ul>
+				<li><a href="">HOME</a></li>
+					<li><a href="index (2).html">ABOUT US</a></li>
+				
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="reference.html">REFERNCES</a></li>				
+					<li><a href="contact.html">CONTACT US</a></li>
+			</ul>
+	</td>
+</tr>
+		</div>
+</table>
+	</div>
 </div>
-<div class="status">
-<center><h1>CONTENT LANGUAGE IN OUR WEBPAGE MAKING:</h1></center>
-<center><span>Available</span>
-</div>
-<div class= "marquee">
-    <ul class="marquee-content">
-        <li><img src="1.png"></li>
-        <li><img src="2.png"></li>
-        <li><img src="3.png"></li>
-        <li><img src="4.png"></li>
-        <li><img src="5.png"></li>
-        <li><img src="6.png"></li>
-    </ul>
-</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
